@@ -549,18 +549,18 @@ function buy_animal()
     local value = value
     local price = price
     local elements = {}
-    table.insert(elements, {label = _U('dog') .. '- <span style="color:green;">$50000</span>',             					value = "chien",	price = 50000})		
-    table.insert(elements, {label = _U('cat') .. '- <span style="color:green;">$15000</span>',             					value = "chat", price = 15000})
-    table.insert(elements, {label = _U('monkey') .. '- <span style="color:green;">$8000</span>',             					value = "singe", price = 8000})
-    table.insert(elements, {label = _U('wolf') .. '- <span style="color:green;">$30000</span>',             					value = "loup", price = 30000})
-    table.insert(elements, {label = _U('bunny') .. '- <span style="color:green;">$25000</span>',             					value = "lapin",	price = 25000})
-    table.insert(elements, {label = _U('husky') .. '- <span style="color:green;">$35000</span>',             					value = "husky", price = 35000})
-    table.insert(elements, {label = _U('pig') .. '- <span style="color:green;">$10000</span>',             					value = "cochon", price = 10000})
-    table.insert(elements, {label = _U('poodle') .. '- <span style="color:green;">$50000</span>',             					value = "caniche", price = 50000})
-    table.insert(elements, {label = _U('pug') .. '- <span style="color:green;">$5000</span>',             					value = "carlin", price = 5000})
-    table.insert(elements, {label = _U('retriever') .. '- <span style="color:green;">$10000</span>',             					value = "retriever", price = 10000})
-    table.insert(elements, {label = _U('asatian') .. '- <span style="color:green;">$55000</span>',             					value = "berger", price = 55000})
-    table.insert(elements, {label = _U('westie') .. '- <span style="color:green;">$50000</span>',             					value = "westie", price = 50000})
+    table.insert(elements, {label = _U('dog') .. '- <span style="color:green;">'.. Config.chien ..'</span>',           	value = "chien",	price = Config.chien})		
+    table.insert(elements, {label = _U('cat') .. '- <span style="color:green;">'.. Config.chat ..'</span>',            	value = "chat", 	price = Config.chat})
+    table.insert(elements, {label = _U('monkey') .. '- <span style="color:green;">'.. Config.singe ..'</span>',        	value = "singe", 	price = Config.singe})
+    table.insert(elements, {label = _U('wolf') .. '- <span style="color:green;">'.. Config.loup ..'</span>',           	value = "loup", 	price = Config.loup})
+    table.insert(elements, {label = _U('bunny') .. '- <span style="color:green;">'.. Config.lapin ..'</span>',         	value = "lapin",	price = Config.lapin})
+    table.insert(elements, {label = _U('husky') .. '- <span style="color:green;">'.. Config.husky ..'</span>',         	value = "husky", 	price = Config.husky})
+    table.insert(elements, {label = _U('pig') .. '- <span style="color:green;">'.. Config.cochon ..'</span>',          	value = "cochon", 	price = Config.cochon})
+    table.insert(elements, {label = _U('poodle') .. '- <span style="color:green;">'.. Config.caniche ..'</span>',      	value = "caniche", 	price = Config.caniche})
+    table.insert(elements, {label = _U('pug') .. '- <span style="color:green;">'.. Config.carlin ..'</span>',           value = "carlin", 	price = Config.carlin})
+    table.insert(elements, {label = _U('retriever') .. '- <span style="color:green;">'.. Config.retriever ..'</span>',  value = "retriever", 	price = Config.retriever})
+    table.insert(elements, {label = _U('asatian') .. '- <span style="color:green;">'.. Config.berger ..'</span>',       value = "berger", 	price = Config.berger})
+    table.insert(elements, {label = _U('westie') .. '- <span style="color:green;">'.. Config.westie ..'</span>',        value = "westie", 	price = Config.westie})
     
     ESX.UI.Menu.Open(
     'default', GetCurrentResourceName(), 'animalerie',
